@@ -26,10 +26,6 @@ jobs:
           # Append the current timestamp to README.md
           echo "Update at $(date)" >> README.md
 
-      - name: Pull changes
-        run: |
-          git pull origin main
-
       - name: Commit changes
         run: |
           git add README.md
